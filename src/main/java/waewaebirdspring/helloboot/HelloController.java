@@ -17,16 +17,17 @@ import java.util.Objects;
 @RestController
 public class HelloController {
     private final HelloService helloService; // 멤버변수, final은 생성할때 초기화를 해주거나 적어도 생성자에서 초기화가 필요하다!
-    private final ApplicationContext applicationContext; //나중에 호출되는 메소드라서 시기가 final X
+    /*private final ApplicationContext applicationContext; //나중에 호출되는 메소드라서 시기가 final X*/
 
-    public HelloController(HelloService helloService, ApplicationContext applicationContext) {
+    public HelloController(HelloService helloService) {
         this.helloService = helloService;
-        this.applicationContext =applicationContext; //스프링 컨테이너
+/*        this.applicationContext =applicationContext; //스프링 컨테이너
 
-        System.out.println(applicationContext);
+        System.out.println(applicationContext);*/
     }
     @GetMapping("/hello")
     public String hello(String name) {
-        return helloService.sayHello(Objects.requireNonNull(name));
+        if(name == null || name.trim().length() == 0) throw new IllegalArgumentException();
+        return helloService.sayHello((name));
     }
 }
