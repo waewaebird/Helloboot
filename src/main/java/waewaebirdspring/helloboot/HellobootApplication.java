@@ -1,5 +1,6 @@
 package waewaebirdspring.helloboot;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.server.WebServer;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
@@ -28,25 +29,8 @@ public class HellobootApplication {
 
     //매핑, 파라미터 바인딩 = 디스패처서블릿
     public static void main(String[] args) {
-        /*********** 1. 스프링 컨테이너! **********/
-        AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext() {
-            @Override
-            protected void onRefresh() {
-                super.onRefresh();
-
-                /*********** 2. 서블릿 컨테이너 실행 및 등록 **********/
-                ServletWebServerFactory serverFactory = this.getBean(ServletWebServerFactory.class);
-                DispatcherServlet dispatcherServlet = this.getBean(DispatcherServlet.class);
-
-                WebServer webServer = serverFactory.getWebServer(servletContext -> {
-                    servletContext.addServlet("dispatcherServlet", dispatcherServlet)
-                            .addMapping("/*");
-                });
-                webServer.start();
-            }
-        };
-
-        applicationContext.register(HellobootApplication.class);
-        applicationContext.refresh();
+        SpringApplication.run(HellobootApplication.class, args);
     }
+
+
 }
