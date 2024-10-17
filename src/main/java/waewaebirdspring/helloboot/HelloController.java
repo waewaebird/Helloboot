@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Objects;
 
+@Controller
 @RequestMapping
 public class HelloController {
     private final HelloService helloService; // 멤버변수, final은 생성할때 초기화를 해주거나 적어도 생성자에서 초기화가 필요하다!
