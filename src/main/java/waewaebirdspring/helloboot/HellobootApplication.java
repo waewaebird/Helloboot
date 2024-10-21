@@ -14,19 +14,8 @@ import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
-@Configuration
-@ComponentScan
+@MySpringBootAnnotation
 public class HellobootApplication {
-    @Bean
-    public ServletWebServerFactory servletWebServerFactory() {
-        return new TomcatServletWebServerFactory();
-    }
-
-    @Bean
-    public DispatcherServlet dispatcherServlet() {
-        return new DispatcherServlet();
-    }
-
     //매핑, 파라미터 바인딩 = 디스패처서블릿
     public static void main(String[] args) {
         SpringApplication.run(HellobootApplication.class, args);
