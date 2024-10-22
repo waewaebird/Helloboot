@@ -1,4 +1,4 @@
-package waewaebirdspring.helloboot;
+package waewaebirdspring.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -12,5 +12,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE) // 클래스 인터페이스 ENUM
 @Configuration
 @ComponentScan
-public @interface MySpringBootAnnotation {
+@EnableMyAutoConfiguration
+public @interface MySpringBootApplication {
 }
