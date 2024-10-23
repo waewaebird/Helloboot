@@ -1,5 +1,6 @@
 package waewaebirdspring.config.autoconfig;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
@@ -10,19 +11,16 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.core.type.MethodMetadata;
+import org.springframework.util.ClassUtils;
+import waewaebirdspring.config.ConditionalMyOnClass;
 import waewaebirdspring.config.MyAutoConfiguration;
 
 @MyAutoConfiguration
-@Conditional(JettyWebServerConfig.JettyCondition.class)
+@ConditionalMyOnClass("org.eclipse.jetty.server.Server")
 public class JettyWebServerConfig {
     @Bean("jettyWebServerFactory")
+    @ConditionalOnMissingBean
     public ServletWebServerFactory servletWebServerFactory() {
         return new JettyServletWebServerFactory();
-    }
-
-    static class JettyCondition implements Condition {
-        public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
-            return false;
-        }
     }
 }
