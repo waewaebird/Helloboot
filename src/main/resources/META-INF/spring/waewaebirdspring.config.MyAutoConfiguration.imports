@@ -1,2 +1,3 @@
 waewaebirdspring.config.autoconfig.DispatcherServletConfig
 waewaebirdspring.config.autoconfig.TomcatWebServerConfig
+waewaebirdspring.config.autoconfig.JettyWebServerConfig
