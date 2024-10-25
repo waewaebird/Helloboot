@@ -28,6 +28,7 @@ dependencies {
     implementation('com.zaxxer:HikariCP:5.0.0')
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    //implementation("org.springframework.boot:spring-boot-starter-undertow")
 }
 
 tasks.named('test') {
