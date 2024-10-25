@@ -1,3 +1,4 @@
+waewaebirdspring.config.autoconfig.DataSourceConfig
 waewaebirdspring.config.autoconfig.PropertyPostProcessorConfig
 waewaebirdspring.config.autoconfig.DispatcherServletConfig
 waewaebirdspring.config.autoconfig.TomcatWebServerConfig
