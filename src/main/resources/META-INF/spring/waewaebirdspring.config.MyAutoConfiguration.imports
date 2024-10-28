@@ -1,6 +1,0 @@
-waewaebirdspring.config.autoconfig.DataSourceConfig
-waewaebirdspring.config.autoconfig.PropertyPostProcessorConfig
-waewaebirdspring.config.autoconfig.DispatcherServletConfig
-waewaebirdspring.config.autoconfig.TomcatWebServerConfig
-waewaebirdspring.config.autoconfig.JettyWebServerConfig
-waewaebirdspring.config.autoconfig.PropertyPlaceholderConfig

@@ -1,16 +1,13 @@
-package waewaebirdspring.config.autoconfig;
+package waewaebirdspring.deletedconfig.autoconfig;
 
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.FactoryBean;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.BeanPostProcessor;
-import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;
 import org.springframework.boot.context.properties.bind.Binder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.core.env.Environment;
-import waewaebirdspring.config.MyAutoConfiguration;
-import waewaebirdspring.config.MyConfigurationProperties;
+import waewaebirdspring.deletedconfig.MyAutoConfiguration;
+import waewaebirdspring.deletedconfig.MyConfigurationProperties;
 
 import java.util.Map;
 

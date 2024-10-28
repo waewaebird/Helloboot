@@ -1,16 +1,12 @@
-package waewaebirdspring.config.autoconfig;
+package waewaebirdspring.deletedconfig.autoconfig;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.*;
-import org.springframework.core.env.Environment;
-import org.springframework.core.type.AnnotatedTypeMetadata;
-import org.springframework.util.ClassUtils;
-import waewaebirdspring.config.ConditionalMyOnClass;
-import waewaebirdspring.config.EnableMyConfigurationProperties;
-import waewaebirdspring.config.MyAutoConfiguration;
+import waewaebirdspring.deletedconfig.ConditionalMyOnClass;
+import waewaebirdspring.deletedconfig.EnableMyConfigurationProperties;
+import waewaebirdspring.deletedconfig.MyAutoConfiguration;
 
 @MyAutoConfiguration
 @ConditionalMyOnClass("org.apache.catalina.startup.Tomcat")

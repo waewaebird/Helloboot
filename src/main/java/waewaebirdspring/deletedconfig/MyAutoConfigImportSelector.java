@@ -1,4 +1,4 @@
-package waewaebirdspring.config;
+package waewaebirdspring.deletedconfig;
 
 import org.springframework.boot.context.annotation.ImportCandidates;
 import org.springframework.context.annotation.DeferredImportSelector;
@@ -6,8 +6,6 @@ import org.springframework.core.type.AnnotationMetadata;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.StreamSupport;
 
 public class MyAutoConfigImportSelector implements DeferredImportSelector {
     private final ClassLoader classLoader;

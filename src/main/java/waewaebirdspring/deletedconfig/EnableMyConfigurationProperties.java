@@ -1,7 +1,6 @@
-package waewaebirdspring.config;
+package waewaebirdspring.deletedconfig;
 
-
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,7 +9,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Component
-public @interface MyConfigurationProperties {
-    String prefix();
-};
+@Import(MyConfigurationPropertiesImportSelector.class)
+public @interface EnableMyConfigurationProperties {
+    Class<?> value();
+}

@@ -1,7 +1,8 @@
-package waewaebirdspring.config;
+package waewaebirdspring.deletedconfig;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -12,6 +13,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE) // 클래스 인터페이스 ENUM
 @Configuration
 @ComponentScan
-@EnableMyAutoConfiguration
-public @interface MySpringBootApplication {
+@Import(MyAutoConfigImportSelector.class)
+public @interface EnableMyAutoConfiguration {
 }

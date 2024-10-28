@@ -1,18 +1,16 @@
-package waewaebirdspring.config.autoconfig;
+package waewaebirdspring.deletedconfig.autoconfig;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnSingleCandidate;
-import org.springframework.boot.jdbc.metadata.HikariDataSourcePoolMetadata;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 import org.springframework.jdbc.support.JdbcTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import waewaebirdspring.config.ConditionalMyOnClass;
-import waewaebirdspring.config.EnableMyConfigurationProperties;
-import waewaebirdspring.config.MyAutoConfiguration;
+import waewaebirdspring.deletedconfig.ConditionalMyOnClass;
+import waewaebirdspring.deletedconfig.EnableMyConfigurationProperties;
+import waewaebirdspring.deletedconfig.MyAutoConfiguration;
 
 import javax.sql.DataSource;
 import java.sql.Driver;

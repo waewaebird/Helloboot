@@ -1,6 +1,6 @@
-package waewaebirdspring.config.autoconfig;
+package waewaebirdspring.deletedconfig.autoconfig;
 
-import waewaebirdspring.config.MyConfigurationProperties;
+import waewaebirdspring.deletedconfig.MyConfigurationProperties;
 
 @MyConfigurationProperties(prefix = "data")
 public class MyDataSourceProperties {

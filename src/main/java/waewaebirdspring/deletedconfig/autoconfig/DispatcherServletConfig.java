@@ -1,9 +1,8 @@
-package waewaebirdspring.config.autoconfig;
+package waewaebirdspring.deletedconfig.autoconfig;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.DispatcherServlet;
-import waewaebirdspring.config.MyAutoConfiguration;
+import waewaebirdspring.deletedconfig.MyAutoConfiguration;
 
 @MyAutoConfiguration
 public class DispatcherServletConfig {

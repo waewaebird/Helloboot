@@ -1,8 +1,8 @@
-package waewaebirdspring.config.autoconfig;
+package waewaebirdspring.deletedconfig.autoconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
-import waewaebirdspring.config.MyAutoConfiguration;
+import waewaebirdspring.deletedconfig.MyAutoConfiguration;
 
 @MyAutoConfiguration
 public class PropertyPlaceholderConfig {

@@ -1,10 +1,8 @@
-package waewaebirdspring.config;
+package waewaebirdspring.deletedconfig;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.core.type.AnnotatedTypeMetadata;
-import org.springframework.core.type.AnnotationMetadata;
-import org.springframework.core.type.MethodMetadata;
 import org.springframework.util.ClassUtils;
 
 import java.util.Map;

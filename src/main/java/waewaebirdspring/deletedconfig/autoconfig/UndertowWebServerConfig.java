@@ -1,9 +1,9 @@
-package waewaebirdspring.config.autoconfig;
+package waewaebirdspring.deletedconfig.autoconfig;
 
 import org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
-import waewaebirdspring.config.ConditionalMyOnClass;
+import waewaebirdspring.deletedconfig.ConditionalMyOnClass;
 
 @ConditionalMyOnClass("io.undertow.undertow")
 public class UndertowWebServerConfig {

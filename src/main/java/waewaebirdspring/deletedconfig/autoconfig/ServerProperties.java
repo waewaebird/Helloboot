@@ -1,7 +1,6 @@
-package waewaebirdspring.config.autoconfig;
+package waewaebirdspring.deletedconfig.autoconfig;
 
-import org.springframework.stereotype.Component;
-import waewaebirdspring.config.MyConfigurationProperties;
+import waewaebirdspring.deletedconfig.MyConfigurationProperties;
 
 @MyConfigurationProperties(prefix = "server")
 public class ServerProperties {

@@ -1,0 +1,6 @@
+waewaebirdspring.deletedconfig.autoconfig.DataSourceConfig
+waewaebirdspring.deletedconfig.autoconfig.PropertyPostProcessorConfig
+waewaebirdspring.deletedconfig.autoconfig.DispatcherServletConfig
+waewaebirdspring.deletedconfig.autoconfig.TomcatWebServerConfig
+waewaebirdspring.deletedconfig.autoconfig.JettyWebServerConfig
+waewaebirdspring.deletedconfig.autoconfig.PropertyPlaceholderConfig

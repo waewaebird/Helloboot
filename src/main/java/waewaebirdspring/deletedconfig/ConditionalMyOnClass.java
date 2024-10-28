@@ -1,4 +1,4 @@
-package waewaebirdspring.config;
+package waewaebirdspring.deletedconfig;
 
 import org.springframework.context.annotation.Conditional;
 
